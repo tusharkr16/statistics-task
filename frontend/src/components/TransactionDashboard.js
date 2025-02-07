@@ -16,7 +16,7 @@ export default function TransactionDashboard() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:5001/api/stats', {
+        const response = await axios.get('https://statisticsbackend.onrender.com/api/stats', {
           params: { month, year }
         });
         setStats(response.data); 

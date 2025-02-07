@@ -13,7 +13,7 @@ const Graph = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('http://localhost:5001/api/bar-chart', {
+                const response = await axios.get('https://statisticsbackend.onrender.com/api/bar-chart', {
                     params: { month, year }
                 });
                 setChartData(response.data);

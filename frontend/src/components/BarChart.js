@@ -17,7 +17,7 @@ export default function BarChartDasboard() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:5001/api/transactions', {
+        const response = await axios.get('https://statisticsbackend.onrender.com/api/transactions', {
           params: { search, page, perPage, month, year }
         });
         setStats(response.data);
